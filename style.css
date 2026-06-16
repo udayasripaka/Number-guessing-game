@@ -1,55 +1,83 @@
 body{
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,#667eea,#764ba2);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    
+    /* softer, muted lavender background */
+    background: linear-gradient(135deg, #6E63D6, #8B82E6);
+    
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
+/* MAIN CARD */
 .container{
-    background:white;
-    padding:40px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,0.3);
-    width:350px;
+    background: #F7F6FF;
+    padding: 40px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 14px 32px rgba(90, 76, 207, 0.18);
+    width: 90%;
+    max-width: 380px;
+    border: 1px solid rgba(255,255,255,0.7);
 }
 
+/* HEADING */
 h1{
-    color:#667eea;
+    color: #5A4CCF;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
+/* TEXT */
 p{
-    color:#666;
+    color: #4a4a4a;
+    font-size: 14px;
 }
 
+/* INPUT */
 input{
-    padding:12px;
-    width:80px;
-    border-radius:10px;
-    border:1px solid #ccc;
-    margin-bottom:15px;
-    font-size:16px;
+    padding: 14px;
+    width: 85%;
+    border-radius: 12px;
+    border: 2px solid #cfc9ff;
+    margin-bottom: 15px;
+    font-size: 16px;
+    outline: none;
+    background: white;
+    transition: 0.3s;
 }
 
+input:focus{
+    border-color: #6E63D6;
+    box-shadow: 0 0 8px rgba(110,99,214,0.35);
+}
+
+/* BUTTON */
 button{
-    padding:12px 20px;
-    border:none;
-    border-radius:10px;
-    background:#667eea;
-    color:white;
-    cursor:pointer;
-    font-size:16px;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 12px;
+    background: #5A4CCF;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 button:hover{
-    transform:scale(1.05);
+    background: #4B3FB8;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.15);
 }
 
+/* RESULT */
 #result{
-    margin-top:20px;
-    font-size:18px;
+    margin-top: 20px;
+    font-size: 18px;
     font-weight: bold;
+    color: #5A4CCF;
 }
