@@ -1,9 +1,14 @@
+html{
+    color-scheme: light;
+}
+
 body{
+    color-scheme: light;
     font-family: 'Segoe UI', sans-serif;
-    
-    /* softer, muted lavender background */
+
+    /* stable lavender background */
     background: linear-gradient(135deg, #6E63D6, #8B82E6);
-    
+
     margin: 0;
     padding: 20px;
     display: flex;
